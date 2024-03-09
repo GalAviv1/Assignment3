@@ -1,5 +1,10 @@
 body{
 background-image: url(./zoo.jpg);
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 }                                        
 header{
   height: 80px; 
