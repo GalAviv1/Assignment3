@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דאשבורד</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="loginNav">
+          <i class="material-icons" style="margin-right: 10px;">account_circle</i>
+          <div class="account">
+            <span id="visitor-name"><b></b></span>
+            <span id="visitor-coins" class="visitor-coins"><b></b></span>
+          </div>
+        </div>
+        <div class="action-buttons">
+          <select id="visitor-dropdown" class="nav-item"></select>
+          <button id="reset-button" class="button-style nav-item">
+            <i class="material-icons">refresh</i> Reset
+          </button>
+          <button id="logout-button" class="button-style nav-item" onclick="logout()">
+            <i class="material-icons">logout</i> Logout
+          </button>
+        </div>
+      </header>
+      
+
+    <main>
+        <section id="visited-animals">
+            <h2>חיות שביקרתי אצלן</h2>
+            <ul id="list-visited-animals"></ul>
+        </section>
+        <section id="fed-animals">
+            <h2>חיות שהאכלתי</h2>
+            <ul id="list-fed-animals"></ul>
+        </section>
+        <section id="favorite-animal">
+            <h2>החיה המועדפת</h2>
+            <p id="text-favorite-animal"></p>
+        </section>
+    </main>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

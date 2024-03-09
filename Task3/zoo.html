@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    
+     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./zoo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="loginNav">
+        <a href="dashboard.html" class="dashboard-button">Dashboard</a>
+        <i class="material-icons" style="margin-right: 10px;">account_circle</i>
+        <div class="account">
+          <span id="visitor-name"><b></b></span>
+          <span id="visitor-coins" class="visitor-coins"><b></b></span>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <select id="visitor-dropdown" class="nav-item"></select>
+        <button id="reset-button" class="button-style nav-item">
+          <i class="material-icons">refresh</i> Reset
+        </button>
+        <button id="logout-button" class="button-style nav-item" onclick="logout()">
+          <i class="material-icons">logout</i> Logout
+        </button>
+      </div>
+    </header>
+    <h1>Please choose your favourite animal to feed</h1>
+    
+    <div class="container">
+      <div class="input-filter">
+        <i class="material-icons" style="font-size: 24px;">search</i>
+        <input type="text" id="filter" class="filter" placeholder="Search animal">
+      </div>
+    <div>
+      <label for="weightMin">Min weight: </label>
+      <input type="number" id="weightMin" name="weightMin" class="form-control" min="0" class="numbersFont">
+    </div>
+     <div>
+      <label for="heightMin">Min height: </label> 
+      <input type="number" id="heightMin" name="heightMin" class="form-control" min="0" class="numbersFont">
+    </div>
+    <div class="habitatClass">
+      <label for="habitat">Habitat: </label>
+      <input type="radio" name="habitat" value="Land">land</input>
+      <input type="radio" name="habitat" value="Sea">sea</input>
+     </div>
+    <div>
+      <label for="animal-color">Color:  </label>
+      <select id="animal-color" name="animal-color" class="form-control">
+        <option value="all colors">Choose... </option>
+        <option value="brown">brown</option>
+        <option value="grey">grey</option>
+        <option value="orange">orange</option>
+        <option value="white">white</option>
+        <option value="black">black</option>
+        <option value="green">green</option>
+      </select> </div> 
+      <div>
+      <label for="predator"> predator ? </label>
+      <input type="checkbox" id="predator" name="predator"  class="form-control" >
+    </div>
+    </div>
+    <div id="animal-cards">
+      </div>
+    <dialog id="animal-dialog"></dialog>
+    <script src="zoo.js"></script>
+  </body>
+  </html>

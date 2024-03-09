@@ -1,0 +1,230 @@
+
+body {
+    background-image: url(./ZOOTRY1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    font-family: "Rubik Doodle Shadow", sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgba(225, 247, 239, 0.8);
+    border: 2px solid #333;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    background: rgba(225, 247, 239, 0.8);
+    border: 2px solid #333;
+  }
+  .loginNav {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+  
+  .account, .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  .nav-right {
+    justify-content: flex-end; 
+    flex-grow: 1;
+  }
+  .nav-item {
+    margin-left: 10px; 
+    align-self: center;
+  }
+  #visitor-name,
+  #visitor-coins {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: bold;
+  }
+  
+  .visitor-coins::before {
+    content: "💰";
+    margin-left: 5px;
+  }
+  
+  #logout-button {
+    background-color: #fa82c2;
+    color: #e9faa4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 80px;
+    text-align: center; 
+  }
+  
+  #logout-button:hover {
+    background-color: #e9faa4;
+    color: #fa82c2;
+  }
+  #reset-button {
+    background-color: #fa82c2;
+    color: #e9faa4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 80px; 
+    text-align: center; 
+  }
+  
+  #reset-button:hover {
+    background-color: #e9faa4;
+    color: #fa82c2;
+  }
+  
+  #visitor-dropdown {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-color: #f2f2f2; 
+    border: 2px solid #fa82c2; 
+    padding: 10px; 
+    border-radius: 5px;
+    font-size: 16px; 
+    cursor: pointer; 
+    outline: none; 
+    position: relative; 
+    transition: background-color 0.3s, border-color 0.3s; 
+  }
+  
+  #visitor-dropdown:hover {
+    background-color: #e9e9e9; 
+    border-color: #e9faa4;
+  }
+ 
+  #visitor-dropdown::-ms-expand {
+    display: none; 
+  }
+  
+
+  @media (max-width: 768px) {
+    section {
+      width: 95%;
+    }
+  }
+
+@media (max-width: 768px) {
+  .animal-card {
+    flex-basis: 100%; 
+  }
+}
+#animal-cards, .section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  gap: 20px;
+}
+
+.animal-card {
+  flex: 0 1 calc(50% - 20px); 
+  height: auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+  vertical-align: top;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.animal-card img {
+  width: 100%; 
+  height: 140px; 
+  object-fit: contain; 
+  border-bottom: 1px solid #ddd; 
+  background-color: #f8f8f8;
+}
+
+
+
+.animal-card h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #333;
+  margin-top: 10px; 
+}
+
+
+.animal-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 20px;
+  text-align: left; 
+}
+
+.animal-card li {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px; 
+  margin-bottom: 5px; 
+  color: #555; 
+}
+
+
+.animal-card li::before {
+  content: "•";
+  color: #78C2AD; 
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em; 
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+  </head>
+  <body>
+   <header>
+  <div class="loginNav">
+    <a href="dashboard.html" class="dashboard-button">Dashboard</a>
+    <i class="material-icons" style="margin-right: 10px;">account_circle</i>
+        <div class="account">
+          <span id="visitor-name"><b></b></span>
+
+          <span id="visitor-coins" class="visitor-coins"><b></b></span>
+       </div>
+    </div>
+       
+    <button id="logout-button" onclick="logout()">
+      <i class="material-icons">logout</i> Log Out
+    </button>
+</header>
+
+      <h1>Log in</h1>
+      <div class="container-enter-zoo">
+        <button data-open-modal id="enter-zoo">
+          <span>Enter Zoo</span>
+          <i class="material-icons">arrow_forward</i>
+        </button>
+        <dialog data-modal id="visitor-dialog">
+          <div>Are you sure you want to enter the zoo?</div>
+          <button id="yes-button">Yes</button>
+        </dialog>
+      </div>
+    <div class="container">
+      <div class="input-filter">
+        <i class="material-icons" style="font-size: 24px;">search</i>
+        <input type="text" id="filter" class="filter" placeholder="Search animal">
+      </div>
+    </div> 
+    <div id="visitor-cards">
+    </div>
+ 
+    <script src="./login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+   
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    
+   <div>
+     <h1>Welcome to our Zoo!</h1>
+     <div class="main">
+       <div class="signup">
+         <form id="create-visitor-form">
+           <label for="user_name">Full name:</label>
+           <input type="text" name="user_name" placeholder="Enter name.." required=""/>
+           <label for="user_email">Email:</label>
+           <input type="email" name="email" placeholder="Enter email.." required=""/>
+           <div class="genderClass">
+             <label for="gender">Gender: </label>
+             <input type="radio" name="gender" value="Male">Male</input>
+             <input type="radio" name="gender" value="Female">Female</input>
+             <input type="radio" name="gender" value="Other">Other</input> </div>
+             <br>
+             <input type="submit" value="Sign Up"/> 
+            </form>
+          </div>
+          <a href="./login.html"> Already our member? log in </a>
+        </div>
+      </div> 
+
+    <!-- לאחר יצירה, הוסיפו אותו למערך האורחים ושמרו את מערך האורחים המעודכן בלוקל סטורג' -->
+    <!-- עברו לעמוד התחברות כדי לבחור את האורח שאיתו תכנסו לגן החיות -->
+    <!-- ממשו את הלוגיקה של היצירה, בפונקציה שהוגדרה מראש בקובץ signup.js -->
+    <script src="./signup.js"></script>
+  </body>
+</html>

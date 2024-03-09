@@ -1,0 +1,232 @@
+body {
+  background-image: url(./zoo.jpg);
+  padding: 10px 80px;
+  
+  }                                           
+header{
+  height: 80px; 
+  display: flex;
+ align-items: center;
+ justify-content:space-between ;
+background:  rgba(102, 200, 164, 0.546);
+border: 2px solid #333;
+}
+
+.loginNav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+#visitor-name {
+  color:rgb(224, 245, 220);
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+
+#visitor-coins {
+  font-size: 27px;
+  color: gold;
+}
+
+.visitor-coins::before {
+  content: "💰";
+  margin-left: 5px; 
+}
+
+.account{
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 2px solid black;
+}
+
+#logout-button {
+  background-color: #fa82c2;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: bold;
+  color: #e9faa4;
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+#logout-button:hover {
+  background-color: #e9faa4;
+  color: #fa82c2;
+}
+
+  h1{
+    text-align: center;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    color:rgb(224, 245, 220);
+    font-size: 100px;
+  }
+  .container-enter-zoo{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+  }
+  
+#enter-zoo{
+  background-color: #fa82c2;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: bold;
+  border: 2px solid black;
+  color: #e9faa4;
+  font-size: 25px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#enter-zoo:hover{
+  background-color: #e9faa4;
+  color: #fa82c2;
+}
+
+[data-modal] {
+  display: none;
+}
+
+[data-modal]::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+[data-modal][open] {
+  display: block;
+  position: fixed;
+  font-family: "Comic Neue", cursive;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[data-modal] div {
+  text-align: center;
+  font-size: 25px;
+}
+
+#yes-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color:  #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-family: "Comic Neue", cursive;
+}
+
+#yes-button:hover {
+  background-color: #003413;
+}
+
+  .container {
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    margin-top: 10px; 
+  }
+  
+  .input-filter {
+    display: flex;
+    align-items: center; }
+  
+  input{
+    border: 1px solid #333;
+    font-size: 18px;
+    padding: 12px 10px;
+    margin: 10px 0;  
+  background-color:beige;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s; /* הוספת אנימציה על צבע הגבול והצגת צל */
+  border-radius: 5px;
+}
+  
+  input.filter:focus { 
+    border-color: #7848bb;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5; }
+
+  #visitor-cards {
+    padding-top: 20px;
+    font-family: 'Segoe UI';
+    color:beige;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+  } 
+  .visitor-card {
+    width: 240px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(102, 200, 164, 0.546);
+    border-radius: 20px;
+    border: 2px solid #333;
+    animation: fade-in 0.4s ease-in forwards;
+
+  }
+  img{
+    width: 200;
+    height: 180px;
+    border-radius: 20px;
+  }
+  .visitor-card h2 {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    letter-spacing: 2px;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+  }
+  
+  .visitor-card .coins {
+    font-size: 25px;
+    display: flex;
+    font-family: "Rubik Doodle Shadow", system-ui;
+    color: gold;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+  
+  #filters{
+    background-color: rgba(153, 248, 171, 0.566);
+    font-family: 'Segoe UI';
+    text-align: center;
+    padding: 2px;
+    border-radius: 20px;
+  }
+
+  .dashboard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28790d; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family:Calibri;
+}

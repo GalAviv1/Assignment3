@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal</title>
+    <script src="./main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="./animal.css">
+</head>
+  <body>
+    <header>
+      <div class="loginNav">
+        <a href="dashboard.html" class="dashboard-button">Dashboard</a>
+        <i class="material-icons" style="margin-right: 10px;">account_circle</i>
+        <div class="account">
+          <span id="visitor-name"><b></b></span>
+          <span id="visitor-coins" class="visitor-coins"><b></b></span>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <select id="visitor-dropdown" class="nav-item"></select>
+        <button id="reset-button" class="button-style nav-item">
+          <i class="material-icons">refresh</i> Reset
+        </button>
+        <button id="logout-button" class="button-style nav-item" onclick="logout()">
+          <i class="material-icons">logout</i> Logout
+        </button>
+      </div>
+    </header>
+    <div>
+      <div id="image">
+   
+      </div>
+      <div>
+        <h1 id="name"></h1>
+        
+        <p id="weight"></p>
+        <p id="height"></p>
+        <p id="color"></p>
+        <p id="habitat"></p>
+        <p id="isPredator"></p>
+        
+        <button data-open-modal id="feed-animal" onclick="feedAnimal()">Feed me</button>
+        <dialog data-modal>
+          <div>The Animal Thank You For Food</div>
+          <button data-close-modal>close</button>
+        </dialog>
+      </div>
+    </div>
+    <h2>Related Animals:</h2>
+    <div id="related-animals"></div>
+
+    <script src="./animal.js"></script>
+  </body>
+</html>
