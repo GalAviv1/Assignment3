@@ -1,8 +1,6 @@
-body {
-  background-image: url(./zoo.jpg);
-  padding: 10px 80px;
-  
-  }                                           
+body{
+background-image: url(./zoo.jpg);
+}                                        
 header{
   height: 80px; 
   display: flex;
